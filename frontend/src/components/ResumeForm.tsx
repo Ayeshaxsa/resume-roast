@@ -81,21 +81,6 @@ function ResumeForm() {
   return (
     <div className="page">
       <div className="card">
-        <h2>Paste Resume</h2>
-
-        <textarea
-          className="textarea"
-          placeholder="Paste resume text..."
-          value={resumeText}
-          onChange={(e) => setResumeText(e.target.value)}
-        />
-
-        <button className="button" onClick={handleRoast} disabled={loading}>
-          {loading ? "🔥 Roasting..." : "🔥 Roast Text"}
-        </button>
-      </div>
-
-      <div className="card">
         <h2>Upload PDF Resume</h2>
 
         <input
@@ -114,6 +99,21 @@ function ResumeForm() {
       </div>
 
       <RoastResult roast={roast} loading={loading} />
+      <h1>OR</h1>
+      <div className="card">
+        <h2>Paste Resume</h2>
+
+        <textarea
+          className="textarea"
+          placeholder="Paste resume text..."
+          value={resumeText}
+          onChange={(e) => setResumeText(e.target.value)}
+        />
+
+        <button className="button" onClick={handleRoast} disabled={loading}>
+          {loading ? "🔥 Roasting..." : "🔥 Roast Text"}
+        </button>
+      </div>
     </div>
   );
 }
