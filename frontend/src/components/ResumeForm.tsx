@@ -15,7 +15,8 @@ function ResumeForm() {
     setRoast("");
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/roast", {
+      // const res = await fetch("http://127.0.0.1:8000/roast", {
+      const res = await fetch("https://resume-roast.up.railway.app/roast", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +55,8 @@ function ResumeForm() {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/roast-pdf", {
+      // const res = await fetch("http://127.0.0.1:8000/roast-pdf", {
+      const res = await fetch("https://resume-roast.up.railway.app/roast-pdf", {
         method: "POST",
         body: formData,
       });
