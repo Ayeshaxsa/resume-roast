@@ -1,6 +1,6 @@
 # 🔥 Resume Roast AI
 
-An AI-powered web application that analyzes a resume and generates constructive, humorous, and actionable feedback using OpenAI.
+An AI-powered web application that analyzes a resume and generates constructive, humorous, and actionable feedback using Groq.
 
 Built as a production-style learning project to understand backend architecture, API development, frontend integration, and AI application deployment.
 
@@ -9,7 +9,7 @@ Built as a production-style learning project to understand backend architecture,
 ## ✨ Features
 
 * 📄 Upload resumes as PDF files
-* 🤖 AI-powered resume roasting using OpenAI
+* 🤖 AI-powered resume roasting using Groq
 * ⚡ FastAPI backend with service-layer architecture
 * 🎨 Modern React + Vite frontend
 * 🔒 Environment variable management for API keys
@@ -23,7 +23,7 @@ Built as a production-style learning project to understand backend architecture,
 
 * Python
 * FastAPI
-* OpenAI API
+* Groq API
 * PyPDF
 * Uvicorn
 
@@ -111,7 +111,7 @@ backend/.env
 Add:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key
+GROQ_API_KEY=youy_GROQ_API_KEY_
 ```
 
 ---
@@ -138,7 +138,7 @@ This project helped me gain hands-on experience with:
 
 * Designing REST APIs using FastAPI
 * Service-layer architecture
-* Working with OpenAI APIs
+* Working with GROQ APIs
 * Extracting text from PDF files
 * Building React frontends
 * Connecting frontend and backend
