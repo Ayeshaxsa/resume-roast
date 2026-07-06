@@ -1,0 +1,39 @@
+# Python
+
+venv/
+.venv/
+env/
+backend/venv/
+
+**pycache**/
+*.py[cod]
+*.pyo
+
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Environment Variables
+
+.env
+.env.*
+!.env.example
+
+# Runtime
+
+*.pid
+
+# Frontend
+
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+.vscode/
+.idea/
+
+# OS
+
+.DS_Store
+Thumbs.db
